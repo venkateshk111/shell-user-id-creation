@@ -1,9 +1,9 @@
 #!/bin/bash
 #  File name: userid-groupid.sh                                                                         
-#  Owner: Venkatesh K                                                                                                                                                                                          
+#  Owner: Venkatesh K
 #  Description: This script will create user id with sudo permission and group id , add user to group                                                                                
 #  Edit below 2 lines with actual username and group name
-username=svc-ansible
+username=ansible
 groupname=Dev
 egrep "^$username" /etc/passwd >/dev/null
 if [ $? -eq 0 ]; then
