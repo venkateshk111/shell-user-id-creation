@@ -1,5 +1,6 @@
 #!/bin/bash
 # edit below line with username to add that user to server example below is for user svc-ansible
+# blank line
 username=ansible
 egrep "^$username" /etc/passwd >/dev/null
 if [ $? -eq 0 ]; then
