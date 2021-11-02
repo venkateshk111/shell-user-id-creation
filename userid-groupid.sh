@@ -5,7 +5,8 @@
 #  Edit below 2 lines with actual username and group name
 username=ansible
 groupname=Dev
-egrep "^$username" /etc/passwd >/dev/null
+# egrep "^$username" /etc/passwd >/dev/null
+id $username &>/dev/null
 if [ $? -eq 0 ]; then
   printf "\n\n$username already exists! No Action Taken!!\n"
 else

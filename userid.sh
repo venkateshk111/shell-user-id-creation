@@ -2,7 +2,8 @@
 # edit below line with username to add that user to server example below is for user ansible
 # blank line
 username=ansible
-egrep "^$username" /etc/passwd >/dev/null
+# egrep "^$username" /etc/passwd >/dev/null
+id $username &>/dev/null
 if [ $? -eq 0 ]; then
   printf "\n\n$username already exists! No Action Taken!!\n"
 else
